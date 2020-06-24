@@ -1,0 +1,14 @@
+#HeadLine {
+    border: 3px dashed black;
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+}
+#ReMark{
+    color: cornflowerblue;
+}
+#main{
+    width: 300px;
+    height: 300px;
+    border: 0.3cm inset #00FFFF;
+}
