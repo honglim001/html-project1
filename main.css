@@ -1,25 +1,32 @@
-#headLine{
+#headLine {
     background-color: grey;
 }
-.frame{
-    border: 1px solid grey;
+
+.frame {
+    border: 1.5px solid grey;
     width: 100%;
 }
+
 .main {
     background-color: deepskyblue;
     width: 80%;
-    height: 200px;
+    height: 500px;
 }
-.sideView{
+
+.sideView {
     background-color: greenyellow;
     text-align: center;
     width: 20%;
-    height: 200px;
+    height: 500px;
 }
-#chat{
-    background-color: lightpink;
+
+#chat {
+    background-color: rgb(255, 208, 215);
 }
-.loginForm{
+
+.loginForm {
     height: 20%;
     background-color: teal;
+    float: right;
+    text-align: center;
 }
