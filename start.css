@@ -1,0 +1,14 @@
+body {
+    background-color: lavenderblush;
+    width: 100%;
+    position: absolute;
+    top: 330px;
+}
+button{
+    font-size: 50px;
+    font-family: Verdana;
+}
+
+body :hover {
+    background-color: skyblue;
+}
