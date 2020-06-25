@@ -3,10 +3,17 @@ body {
     width: 100%;
     position: absolute;
     top: 330px;
+    background-size:cover;
 }
 button{
     font-size: 50px;
     font-family: Verdana;
+    align-items: center;
+    display: inline-block;
+    background-color: #00ff0000;
+    text-align: center; 
+    border: 0;
+    outline: 0;
 }
 
 body :hover {
