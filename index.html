@@ -1,62 +1,36 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="main.css">
-    <meta charset="UTF-8">
-    <title>ToDoList</title>
+    <title>practice</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
-    <table id="HeadLine">
-        <td>
-            <strong>ToDoList</strong><br>
-            <div id="ReMark">DGSW(1-2홍준혁,임재현)</div>
-        </td>
-    </table>
-    <table id="main">
-        <tr>
-            <td>
-                <!--ToDoList기능 구현-->
-                아직 아무것도 없네요...
-                <button>생성</button>
-                <hr width="100%" color="black">
+    <table class="frame">
+        <thead>
+            <tr>
+                <td id="headLine" colspan="5" align="center"><strong>To Do List</strong></td>
+            </tr>
+        </thead>
+        <tbody>
+            <td class="loginForm">
+                <form action="">
+                    <input type="id">
+                    <input type="password">
+                </form>
             </td>
-        </tr>
-
-        <tr>
-            <td id="chatting">
-                <!--채팅창 코드 넣는 곳-->
-                <script>
-                    id = "dsq-count-scr"
-                    src = "//dgswtodolist.disqus.com/count.js"
-                    async >
-                </script>
-                <div id="disqus_thread"></div>
-                <script>
-                    /**
-                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                    /*
-                    var disqus_config = function () {
-                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                    };
-                    */
-                    (function () { // DON'T EDIT BELOW THIS LINE
-                        var d = document,
-                            s = d.createElement('script');
-                        s.src = 'https://dgswtodolist.disqus.com/embed.js';
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
-                        powered
-                        by Disqus.</a></noscript>
-            </td>
-        </tr>
+            <tr>
+                <td class="main" align="center">main</td>
+                <td class="sideView">sideView</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="chat" colspan="5" align="center">Chatting</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
+
 
 </html>
