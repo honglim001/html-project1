@@ -1,17 +1,17 @@
 body {
-    background-color: lavenderblush;
+    background-image: url('todopicture.jpg');
     width: 100%;
     position: absolute;
     top: 330px;
-    background-size:cover;
+    background-size: cover;
 }
-button{
+
+button {
     font-size: 50px;
     font-family: Verdana;
     align-items: center;
-    display: inline-block;
-    background-color: #00ff0000;
-    text-align: center; 
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.6);
     border: 0;
     outline: 0;
 }
