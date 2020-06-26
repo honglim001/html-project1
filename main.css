@@ -30,3 +30,6 @@
     float: right;
     text-align: center;
 }
+#memo{
+    border-style:1px solid blue;
+}
