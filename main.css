@@ -1,3 +1,6 @@
+body{
+    background-image: url(ToDoList.PNG);
+}
 #headLine {
     background-color: grey;
 }
@@ -10,7 +13,7 @@
 }
 
 .main {
-    background-color: deepskyblue;
+    background-color: white;
     width: 80%;
     height: 500px;
 }
@@ -23,10 +26,27 @@
 }
 
 tbody {
-    background-color: deepskyblue;
+    background-color: white;
 }
 
 #chat {
     background-color: rgb(255, 208, 215);
 }
 
+.main_todo {
+    border: 0px solid;
+    size: 100px;
+    font-family: fantasy;
+    align-items: unset;
+}
+
+.noresize {
+    resize: none;
+}
+#todo{
+    width: 1000px;
+}
+.img{
+    width: 50px;
+    height: 50px;
+}
