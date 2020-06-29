@@ -5,7 +5,14 @@ body {
     top: 330px;
     background-size: cover;
 }
-
+#start{
+    border: solid 1px;
+    background-color: rgba(245, 245, 245, 0.6);
+}
+p{
+    align-items: center;
+    text-align: center;
+}
 button {
     font-size: 50px;
     font-family: Verdana;
@@ -16,6 +23,6 @@ button {
     outline: 0;
 }
 
-body :hover {
+#start :hover {
     background-color: skyblue;
 }
