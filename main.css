@@ -1,9 +1,9 @@
-body{
+body {
     background-image: url(ToDoList.PNG);
-    margin: 0;
 }
+
 #headLine {
-    background-color: darkgoldenrod;
+    background-color: grey;
 }
 
 .frame {
@@ -14,16 +14,16 @@ body{
 }
 
 .main {
-    background-color: skyblue;
-
+    background-color: white;
+    width: 80%;
+    height: 500px;
 }
 
 .sideView {
-    background-color: goldenrod;
+    background-color: greenyellow;
     text-align: center;
     width: 20%;
     height: 500px;
-    border-top: solid 3px darkgoldenrod
 }
 
 tbody {
@@ -35,36 +35,22 @@ tbody {
 }
 
 .main_todo {
-    border: 0px solid;
+    border: 1px solid;
     size: 100px;
     font-family: fantasy;
-    align-items: unset;
-    padding: 0;
+    width : 80%;
+    overflow:scroll
 }
 
 .noresize {
     resize: none;
 }
-#todo{
+
+#todo {
     width: 1000px;
 }
-.img{
+
+.img {
     width: 50px;
     height: 50px;
-}
-.bottom{
-  background: dimgray;
-}
-#grid{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-.main_todo {
-  border-bottom: solid 3px gold;
-  margin: 0;
-  background: white;
-}
-p {
-  margin: 0;
 }
