@@ -3,6 +3,24 @@
 <head>
     <title>practice</title>
     <link rel="stylesheet" href="./main.css">
+    <script src="func.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.js"></script>
+    <script>
+        function addTable() {
+            alert('테이블을 만듭니다.');
+            var head = document.getElementById('head').value;
+            var memo = document.getElementById('memo').value;
+            var tableData = '';
+            tableData += '<table class="main_todo" class="main_todo">';
+            tableData += '<tr>';
+            tableData += '<td>';
+            tableData += '<strong>'+head +'</strong>'+'<br>'+memo;
+            tableData += '<td>';
+            tableData += '<tr>';
+            tableData += '</table>';
+            $('.main').append(tableData);
+        }
+    </script>
 </head>
 
 <body>
@@ -14,28 +32,23 @@
         </thead>
 
         <tbody>
-            <p><a href="http://www.dgsw.hs.kr/index.do" target="_blank" title="대구소프트웨어마이스터고등학교 홈페이지로 이동합니다."><img src="dgswhs.jpg"
-                        alt="대구소프트웨어마이스터고등학교 마크"></a></li>
+            <p><a href="http://www.dgsw.hs.kr/index.do" target="_blank" title="대구소프트웨어마이스터고등학교 홈페이지로 이동합니다."><img
+                        src="dgswhs.jpg" alt="대구소프트웨어마이스터고등학교 마크"></a></li>
             </p>
             <tr>
                 <td class="main" align="center">
-                  <table class="main_todo">
-                    <tr>
-                        <td>
-                            <!--Memo에서 제출을 누르면 테이블에 그 내용을 추가하는 기능을 만들것임-->
-                        </td>
-                    </tr>
-                  </table>
                 </td>
                 <td class="sideView">MeMo<br>
-                    <input type="text" placeholder="제목을 입력하세요"><br>
-                    <textarea name="" id="memo" cols="40" rows="40" class="noresize" placeholder="내용을 입력하세요"></textarea><br>
-                    <button onclick="">To Do List 추가하기</button>
+                    <input type="text" id="head" placeholder="제목을 입력하세요"><br>
+                    <textarea name="" id="memo" cols="40" rows="40" class="noresize"
+                        placeholder="내용을 입력하세요"></textarea><br>
+                    <button onclick="addTable()">To Do List 추가하기</button>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td id="chat" colspan="5" align="center">이곳에 채팅창 코드를 넣어주세요</td><!--채팅창 코드 넣는 곳-->
+                <td id="chat" colspan="5" align="center">이곳에 채팅창 코드를 넣어주세요</td>
+                <!--채팅창 코드 넣는 곳-->
             </tr>
         </tfoot>
     </table>
