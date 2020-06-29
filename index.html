@@ -6,19 +6,26 @@
     <script src="func.js"></script>
     <script src="http://code.jquery.com/jquery-1.7.js"></script>
     <script>
-        function addTable() {
+        function addTable() { //테이블을 만드는 함수 
             var head = document.getElementById('head').value;
             var memo = document.getElementById('memo').value;
             var tableData = '';
             tableData += '<table class="main_todo" class="main_todo">';
             tableData += '<tr>';
             tableData += '<td>';
-            tableData += '<strong>'+head +'</strong>'+memo;
+            tableData += '<strong>' + head +'<br>'+'</strong>' + memo;
             tableData += '<td>';
             tableData += '<tr>';
             tableData += '</table>';
-            tableData += '<br>';
             $('.main').append(tableData);
+        }
+
+        function clearTable() { //가장 최근에 만든 테이블을 없애는 함수 
+            $('.main_todo:last').remove();
+        }
+
+        function clearAllTable() { //모든 테이블을 없애는 테이블 
+            $('.main_todo').remove();
         }
     </script>
 </head>
@@ -27,7 +34,7 @@
     <table class="frame">
         <thead>
             <tr>
-                <td id="headLine" colspan="5" align="center"><strong>To Do List</strong></td>
+                <td id="headLine" colspan="5" align="center"><strong id="headLine">To Do List</strong></td>
             </tr>
         </thead>
 
@@ -36,25 +43,30 @@
                         src="dgswhs.jpg" alt="대구소프트웨어마이스터고등학교 마크"></a></li>
             </p>
             <tr>
-                <td class="main" align="center">
+                <td class="main">
                 </td>
+
                 <td class="sideView">MeMo<br>
                     <input type="text" id="head" placeholder="제목을 입력하세요"><br>
                     <textarea name="" id="memo" cols="40" rows="40" class="noresize"
                         placeholder="내용을 입력하세요"></textarea><br>
                     <button onclick="addTable()">To Do List 추가하기</button>
-                    <button onclick="">CLear</button>
+                    <button onclick="clearTable()">CLear</button>
+                    <button onclick="clearAllTable()">Clear All</button>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td id="chat" colspan="5" align="center">이곳에 채팅창 코드를 넣어주세요</td>
-                <!--채팅창 코드 넣는 곳-->
+                <td id="chat" colspan="5" align="center" style="background-color: #6464FF;">
+                    <p>Maker's Facebook</p><a href="https://www.facebook.com/programmingHong/" target="_blank"><img
+                            src="facebook.jpg" alt="" class="img">홍준혁</a><br><a
+                        href="https://www.facebook.com/programmingHong/" target="_blank"><img src="facebook.jpg" alt=""
+                            class="img">임재현</a>
+                            <a href="https://www.facebook.com/profile.php?id=100015302599102" target="_blank"><img src="" alt="">조민수</a>
             </tr>
         </tfoot>
     </table>
     <a href="https://github.com/honglim001" target="_blank"><img src="깃허브.jpg" alt="" class="img"></a>
-    <a href="https://www.facebook.com/programmingHong/" target="_blank"><img src="facebook.jpg" alt="" class="img"></a>
 </body>
 
 
