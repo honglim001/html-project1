@@ -6,19 +6,19 @@
     <script src="func.js"></script>
     <script src="http://code.jquery.com/jquery-1.7.js"></script>
     <script>
-          function addTable() {
-              alert('테이블을 만듭니다.');
-              var head = document.getElementById('head').value;
-              var memo = document.getElementById('memo').value;
-              var tableData = '';
-              tableData += '<table class="main_todo" class="main_todo">';
-              tableData += '<tr>';
-              tableData += '<td>';
-              tableData += '<strong>'+head +'</strong>'+'<br>'+memo;
-              tableData += '<td>';
-              tableData += '<tr>';
-              tableData += '</table>';
-              $('.main').append(tableData);
+        function addTable() {
+            var head = document.getElementById('head').value;
+            var memo = document.getElementById('memo').value;
+            var tableData = '';
+            tableData += '<table class="main_todo" class="main_todo">';
+            tableData += '<tr>';
+            tableData += '<td>';
+            tableData += '<strong>'+head +'</strong>'+memo;
+            tableData += '<td>';
+            tableData += '<tr>';
+            tableData += '</table>';
+            tableData += '<br>';
+            $('.main').append(tableData);
         }
     </script>
 </head>
@@ -36,13 +36,14 @@
                         src="dgswhs.jpg" alt="대구소프트웨어마이스터고등학교 마크"></a></li>
             </p>
             <tr>
-                <td class="main">
+                <td class="main" align="center">
                 </td>
                 <td class="sideView">MeMo<br>
                     <input type="text" id="head" placeholder="제목을 입력하세요"><br>
                     <textarea name="" id="memo" cols="40" rows="40" class="noresize"
                         placeholder="내용을 입력하세요"></textarea><br>
                     <button onclick="addTable()">To Do List 추가하기</button>
+                    <button onclick="">CLear</button>
             </tr>
         </tbody>
         <tfoot>
@@ -52,10 +53,8 @@
             </tr>
         </tfoot>
     </table>
-    <div class="bottom">
-      <a href="https://github.com/honglim001" target="_blank"><img src="깃허브.jpg" alt="" class="img"></a>
-      <a href="https://www.facebook.com/programmingHong/" target="_blank"><img src="facebook.jpg" alt="" class="img"></a>
-    </div>
+    <a href="https://github.com/honglim001" target="_blank"><img src="깃허브.jpg" alt="" class="img"></a>
+    <a href="https://www.facebook.com/programmingHong/" target="_blank"><img src="facebook.jpg" alt="" class="img"></a>
 </body>
 
 
