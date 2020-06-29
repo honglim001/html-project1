@@ -4,7 +4,9 @@
 
 .frame {
     border: 1.5px solid grey;
+    background-color: greenyellow;
     width: 100%;
+    border-collapse: collapse;
 }
 
 .main {
@@ -20,6 +22,10 @@
     height: 500px;
 }
 
+tbody {
+    background-color: deepskyblue;
+}
+
 #chat {
     background-color: rgb(255, 208, 215);
 }
@@ -29,7 +35,4 @@
     background-color: teal;
     float: right;
     text-align: center;
-}
-#memo{
-    border-style:1px solid blue;
 }
