@@ -1,14 +1,17 @@
+#headLine{
+    font-size: 50px;
+}
 body {
-    background-image: url(ToDoList.PNG);
+    background-color: #C8C8FF;
 }
 
 #headLine {
-    background-color: grey;
+    background-color: #C8C8FF;
 }
 
 .frame {
-    border: 1.5px solid grey;
-    background-color: greenyellow;
+    border: 1.5px solid #C8C8FF;
+    background-color: #C8C8FF;
     width: 100%;
     border-collapse: collapse;
 }
@@ -20,7 +23,7 @@ body {
 }
 
 .sideView {
-    background-color: greenyellow;
+    background-color: #6464FF;
     text-align: center;
     width: 20%;
     height: 500px;
@@ -38,8 +41,7 @@ tbody {
     border: 1px solid;
     size: 100px;
     font-family: fantasy;
-    width : 80%;
-    overflow:scroll
+    width : 80%;  
 }
 
 .noresize {
