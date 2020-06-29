@@ -1,8 +1,9 @@
 body{
     background-image: url(ToDoList.PNG);
+    margin: 0;
 }
 #headLine {
-    background-color: grey;
+    background-color: darkgoldenrod;
 }
 
 .frame {
@@ -13,16 +14,16 @@ body{
 }
 
 .main {
-    background-color: white;
-    width: 80%;
-    height: 500px;
+    background-color: skyblue;
+
 }
 
 .sideView {
-    background-color: greenyellow;
+    background-color: goldenrod;
     text-align: center;
     width: 20%;
     height: 500px;
+    border-top: solid 3px darkgoldenrod
 }
 
 tbody {
@@ -38,6 +39,7 @@ tbody {
     size: 100px;
     font-family: fantasy;
     align-items: unset;
+    padding: 0;
 }
 
 .noresize {
@@ -49,4 +51,20 @@ tbody {
 .img{
     width: 50px;
     height: 50px;
+}
+.bottom{
+  background: dimgray;
+}
+#grid{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.main_todo {
+  border-bottom: solid 3px gold;
+  margin: 0;
+  background: white;
+}
+p {
+  margin: 0;
 }
