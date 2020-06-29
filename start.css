@@ -2,16 +2,21 @@ body {
     background-image: url('todopicture.jpg');
     width: 100%;
     position: absolute;
-    top: 330px;
     background-size: cover;
+    margin: 0;
 }
 #start{
     border: solid 1px;
     background-color: rgba(245, 245, 245, 0.6);
+    margin-top: 450px;
+    margin-bottom: 400px;
 }
 p{
     align-items: center;
-    text-align: center;
+    text-align: left;
+    margin: 0;
+    padding-right: auto;
+    background: white;
 }
 button {
     font-size: 50px;
@@ -24,5 +29,8 @@ button {
 }
 
 #start :hover {
-    background-color: skyblue;
+    background-color: dimgray;
+}
+.bottom{
+  margin: auto;
 }
