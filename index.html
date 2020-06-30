@@ -42,22 +42,32 @@
         flag = -1; //-1일시 다크모드,1일시 라이트모드 
         function change_mode() {
             flag = flag * -1;
-            if (flag == 1) {
+            if (flag == 1) { //화이트 모드
                 $('.main').css("background-color", "#F0F8FF");
                 $('.sideView').css("background-color", "#F0FFFF");
-                $('#headLine').css('background-color', "#FFFAF0");
-                $('body').css("background-color", "#FFFAF0");
-                $('#chat').css('background-color', "#FFFAF0");
-                $('.frame').css('background-color', "#FFFAF0");
+                $('#headLine').css('background-color', "#ffc861");
+                $('body').css("background-color", "#ffc861");
+                $('.main_todo').css("background-color","#ffffff")
+                $('#chat').css('background-color', "#ffc861");
+                $('.frame').css('background-color', "#ffc861");
                 $('#title_memo').css('color', "black");
-            } else {
+                $('#head').css('background-color',"fff28c");
+                $('#memo').css('background-color',"#fff28c");
+                $('.button_color').css('background-color',"#fff28c");
+                $('#change').css('background-color',"#F0F8FF");
+            } else { //다크모드
                 $('.main').css("background-color", "#3c3c3c");
                 $('.sideView').css("background-color", "#3c3c3c");
                 $('#headLine').css("background-color", "dimgray");
                 $('#chat').css("background-color", "dimgray");
                 $('body').css("background-color", "dimgray");
+                $('.main_todo').css("background-color","#8a8a8a");
                 $('.frame').css('background-color', "dimgrey");
                 $('#title_memo').css('color', "white");
+                $('#head').css('background-color',"dimgrey");
+                $('#memo').css('background-color',"dimgrey");
+                $('.button_color').css('background-color',"dimgrey");
+                $('#change').css('background-color',"#3c3c3c");
             }
         }
     </script>
@@ -83,9 +93,9 @@
                     <input type="text" id="head" placeholder="제목을 입력하세요"><br>
                     <textarea name="" id="memo" cols="40" rows="40" class="noresize"
                         placeholder="내용을 입력하세요"></textarea><br>
-                    <button onclick="addTable()">To Do List 추가하기</button>
-                    <button onclick="clearTable()">CLear</button>
-                    <button onclick="clearAllTable()">Clear All</button>
+                    <button onclick="addTable()" class="button_color">To Do List 추가하기</button>
+                    <button onclick="clearTable()" class="button_color">CLear</button>
+                    <button onclick="clearAllTable()" class="button_color">Clear All</button>
             </tr>
         </tbody>
         <tfoot>
@@ -111,3 +121,4 @@
 
 
 </html>
+
