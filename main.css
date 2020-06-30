@@ -2,11 +2,12 @@
     font-size: 50px;
 }
 body {
-    background-color: #C8C8FF;
+    background-color: white;
+    margin: 0;
 }
 
 #headLine {
-    background-color: #C8C8FF;
+    background-color: darkgoldenrod;
 }
 
 .frame {
@@ -17,16 +18,17 @@ body {
 }
 
 .main {
-    background-color: white;
+    background-color: #0ca6d4;
     width: 80%;
     height: 500px;
 }
 
 .sideView {
-    background-color: #6464FF;
+    background-color: #8f784b;
     text-align: center;
     width: 20%;
     height: 500px;
+    border-top:darkgoldenrod
 }
 
 tbody {
@@ -41,7 +43,8 @@ tbody {
     border: 1px solid;
     size: 100px;
     font-family: fantasy;
-    width : 80%;  
+    width : 80%;
+    background: white;
 }
 
 .noresize {
