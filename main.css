@@ -2,28 +2,28 @@
     font-size: 50px;
 }
 body {
-    background-color: #C8C8FF;
+    background-color: dimgray;
+    margin:0;
 }
 
 #headLine {
-    background-color: #C8C8FF;
+    background-color: dimgray;
 }
 
 .frame {
-    border: 1.5px solid #C8C8FF;
-    background-color: #C8C8FF;
+    background-color: #3c3c3c;
     width: 100%;
     border-collapse: collapse;
 }
 
 .main {
-    background-color: white;
+    background-color: #3c3c3c;
     width: 80%;
     height: 500px;
 }
 
 .sideView {
-    background-color: #6464FF;
+    background-color: #3c3c3c;
     text-align: center;
     width: 20%;
     height: 500px;
@@ -34,7 +34,7 @@ tbody {
 }
 
 #chat {
-    background-color: rgb(255, 208, 215);
+    background-color: dimgray;
 }
 
 .main_todo {
@@ -42,6 +42,7 @@ tbody {
     size: 100px;
     font-family: fantasy;
     width : 80%;  
+    background:white;
 }
 
 .noresize {
