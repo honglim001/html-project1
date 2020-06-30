@@ -5,28 +5,32 @@
     <link rel="stylesheet" href="./main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script>
-                var head = document.getElementById('head').value;
-                var memo = document.getElementById('memo').value;
-                var tableData = '';
-                if (head == '' && memo == '') {
-                    alert('제목과 내용을 입력해 주세요');
-                    return ;
-                } else if (head == '') {
-                    alert('제목을 입력해 주세요');
-                    return;
-                } else if (memo == '') {
-                    alert('내용을 입력해 주세요');
-                    return;
-                } else {
-                    tableData += '<table class="main_todo" class="main_todo">';
-                    tableData += '<tr>';
-                    tableData += '<td>';
-                    tableData += '<strong>' + head + '<br>' + '</strong>' + memo;
-                    tableData += '<td>';
-                    tableData += '<tr>';
-                    tableData += '</table>';
-                    $('.main').append(tableData);
-                }
+        function addTable() { //테이블을 만드는 함수 
+            var cnt = 1;
+            var head = document.getElementById('head').value;
+            var memo = document.getElementById('memo').value;
+            var tableData = '';
+            if (head == '' && memo == '') {
+                alert('제목과 내용을 입력해 주세요');
+                return ;
+            } else if (head == '') {
+                alert('제목을 입력해 주세요');
+                return;
+            } else if (memo == '') {
+                alert('내용을 입력해 주세요');
+                return;
+            } else {
+                tableData += '<table class="main_todo" class="main_todo">';
+                tableData += '<tr>';
+                tableData += '<td>';
+                tableData += '<strong>' + head + '<br>' + '</strong>' + memo;
+                tableData += '<td>';
+                tableData += '<tr>';
+                tableData += '</table>';
+                $('.main').append(tableData);
+            }
+
+        }
         function clearTable() { //가장 최근에 만든 테이블을 없애는 함수
             $('.main_todo:last').remove();
         }
