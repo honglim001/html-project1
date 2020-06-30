@@ -5,30 +5,30 @@
     <link rel="stylesheet" href="./main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script>
-        function addTable() { //테이블을 만드는 함수 
+        function addTable() { //테이블을 만드는 함수
             var cnt = 1;
             var head = document.getElementById('head').value;
             var memo = document.getElementById('memo').value;
             var tableData = '';
             tableData += '<table class="main_todo" class="main_todo">';
             tableData += '<tr>';
-            tableData += '<td>';
+            tableData += '<td class="main_todo_back">';
             tableData += '<strong>'+ head + '<br>' + '</strong>' + memo;
-            tableData += '<td>';
+            tableData += '<td class="main_todo_back">';
             tableData += '<tr>';
             tableData += '</table>';
             $('.main').append(tableData);
             cnt++;
         }
 
-        function clearTable() { //가장 최근에 만든 테이블을 없애는 함수 
+        function clearTable() { //가장 최근에 만든 테이블을 없애는 함수
             $('.main_todo:last').remove();
         }
 
-        function clearAllTable() { //모든 테이블을 없애는 테이블 
+        function clearAllTable() { //모든 테이블을 없애는 테이블
             $('.main_todo').remove();
         }
-        flag = -1; //-1일시 다크모드,1일시 라이트모드 
+        flag = -1; //-1일시 다크모드,1일시 라이트모드
         function change_mode() {
             flag = flag * -1;
             if(flag == 1)
@@ -40,6 +40,11 @@
                 $('#chat').css('background-color',"#FFFAF0");
                 $('.frame').css('background-color',"#FFFAF0");
                 $('#title_memo').css('color',"black");
+                $('.main_todo').css('background-color',"white");
+                $('.main_todo_back').css('background-color',"white");
+                $('.main_todo').css('background-color',"black");
+                $('.main_todo_back').css('background-color',"black");
+                $('.main_todo').css('color',"white");
             }
             else{
                 $('.main').css("background-color","#3c3c3c");
@@ -49,6 +54,9 @@
                 $('body').css("background-color","dimgray");
                 $('.frame').css('background-color',"dimgrey");
                 $('#title_memo').css('color',"white");
+                $('.main_todo').css('background-color',"white");
+                $('.main_todo_back').css('background-color',"white");
+                $('.main_todo').css('color',"black");
             }
         }
     </script>
@@ -83,7 +91,7 @@
             <tr>
                 <td id="chat" colspan="5" align="center">
                     <p>Maker</p>홍준혁 : <a href="https://www.facebook.com/programmingHong/" target="_blank"><img
-                            src="facebook.jpg" alt="" class="img"><a href="https://github.com/milky1234" target="_blank"><img src="깃허브.jpg" class="img" alt="홍준혁"></a></a><br>
+                            src="facebook.jpg" alt="https://github.com/milky1234" class="img"><a href="" target="_blank"><img src="깃허브.jpg" class="img" alt="홍준혁"></a></a><br>
                             임재현 : <a href="https://www.facebook.com/profile.php?id=100016279240376" target="_blank"><img
                             src="facebook.jpg" alt="" class="img"><a href="https://github.com/limjh0513" target="_blank"><img src="깃허브.jpg" class="img" alt="임재현"></a></a><br>
                             조민수 : <a href="https://www.facebook.com/profile.php?id=100015302599102" target="_blank"><img
