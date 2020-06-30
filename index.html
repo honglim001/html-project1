@@ -6,17 +6,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script>
         function addTable() { //테이블을 만드는 함수 
+            var cnt = 1;
             var head = document.getElementById('head').value;
             var memo = document.getElementById('memo').value;
             var tableData = '';
             tableData += '<table class="main_todo" class="main_todo">';
             tableData += '<tr>';
             tableData += '<td>';
-            tableData += '<strong>' + head +'<br>'+'</strong>' + memo;
+            tableData += '<strong>' +cnt+head +'<br>'+'</strong>' + memo;
             tableData += '<td>';
             tableData += '<tr>';
             tableData += '</table>';
             $('.main').append(tableData);
+            cnt++;
         }
 
         function clearTable() { //가장 최근에 만든 테이블을 없애는 함수 
@@ -58,10 +60,10 @@
             <tr>
                 <td id="chat" colspan="5" align="center" style="background-color: #6464FF;">
                     <p>Maker's Facebook</p><a href="https://www.facebook.com/programmingHong/" target="_blank"><img
-                            src="facebook.jpg" alt="" class="img">홍준혁</a><br><a
-                        href="https://www.facebook.com/programmingHong/" target="_blank"><img src="facebook.jpg" alt=""
-                            class="img">임재현</a>
-                            <a href="https://www.facebook.com/profile.php?id=100015302599102" target="_blank"><img src="" alt="">조민수</a>
+                            src="facebook.jpg" alt="" class="img">홍준혁</a><br>
+                            <a href="https://www.facebook.com/profile.php?id=100016279240376" target="_blank"><img src="facebook.jpg" alt=""
+                            class="img">임재현</a><br>
+                            <a href="https://www.facebook.com/profile.php?id=100015302599102" target="_blank"><img src="facebook.jpg" alt="" class ="img">조민수</a>
             </tr>
         </tfoot>
     </table>
