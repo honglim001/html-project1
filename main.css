@@ -41,7 +41,7 @@ tbody {
     border: 1px solid;
     size: 100px;
     font-family: fantasy;
-    width : 80%;  
+    width : 80%;
     background:white;
 }
 
@@ -59,4 +59,30 @@ tbody {
 }
 #title_memo{
     color: white;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  padding-right: 70px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid dimgray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: dimgray;
+}
+textarea{
+  width: 100%;
+  padding: 12px;
+  padding-right: 70px;
+  display: inline-block;
+  border: 1px solid dimgray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: dimgray;
+}
+button{
+  border: 0;
+  outline: 0;
+  background: dimgray;
 }
