@@ -31,42 +31,33 @@
             }
 
         }
-        function clearTable() { //가장 최근에 만든 테이블을 없애는 함수
+
+        function clearTable() { //가장 최근에 만든 테이블을 없애는 함수 
             $('.main_todo:last').remove();
         }
 
-        function clearAllTable() { //모든 테이블을 없애는 테이블
+        function clearAllTable() { //모든 테이블을 없애는 테이블 
             $('.main_todo').remove();
         }
-        flag = -1; //-1일시 다크모드,1일시 라이트모드
+        flag = -1; //-1일시 다크모드,1일시 라이트모드 
         function change_mode() {
             flag = flag * -1;
-            if(flag == 1)
-            {
-                $('.main').css("background-color","#F0F8FF");
-                $('.sideView').css("background-color","#F0FFFF");
-                $('#headLine').css('background-color',"#FFFAF0");
-                $('body').css("background-color","#FFFAF0");
-                $('#chat').css('background-color',"#FFFAF0");
-                $('.frame').css('background-color',"#FFFAF0");
-                $('#title_memo').css('color',"black");
-                $('.main_todo').css('background-color',"white");
-                $('.main_todo_back').css('background-color',"white");
-                $('.main_todo').css('background-color',"black");
-                $('.main_todo_back').css('background-color',"black");
-                $('.main_todo').css('color',"white");
-            }
-            else{
-                $('.main').css("background-color","#3c3c3c");
-                $('.sideView').css("background-color","#3c3c3c");
-                $('#headLine').css("background-color","dimgray");
-                $('#chat').css("background-color","dimgray");
-                $('body').css("background-color","dimgray");
-                $('.frame').css('background-color',"dimgrey");
-                $('#title_memo').css('color',"white");
-                $('.main_todo').css('background-color',"white");
-                $('.main_todo_back').css('background-color',"white");
-                $('.main_todo').css('color',"black");
+            if (flag == 1) {
+                $('.main').css("background-color", "#F0F8FF");
+                $('.sideView').css("background-color", "#F0FFFF");
+                $('#headLine').css('background-color', "#FFFAF0");
+                $('body').css("background-color", "#FFFAF0");
+                $('#chat').css('background-color', "#FFFAF0");
+                $('.frame').css('background-color', "#FFFAF0");
+                $('#title_memo').css('color', "black");
+            } else {
+                $('.main').css("background-color", "#3c3c3c");
+                $('.sideView').css("background-color", "#3c3c3c");
+                $('#headLine').css("background-color", "dimgray");
+                $('#chat').css("background-color", "dimgray");
+                $('body').css("background-color", "dimgray");
+                $('.frame').css('background-color', "dimgrey");
+                $('#title_memo').css('color', "white");
             }
         }
     </script>
@@ -101,17 +92,21 @@
             <tr>
                 <td id="chat" colspan="5" align="center">
                     <p>Maker</p>홍준혁 : <a href="https://www.facebook.com/programmingHong/" target="_blank"><img
-                            src="facebook.jpg" alt="https://github.com/milky1234" class="img"><a href="" target="_blank"><img src="깃허브.jpg" class="img" alt="홍준혁"></a></a><br>
-                            임재현 : <a href="https://www.facebook.com/profile.php?id=100016279240376" target="_blank"><img
-                            src="facebook.jpg" alt="" class="img"><a href="https://github.com/limjh0513" target="_blank"><img src="깃허브.jpg" class="img" alt="임재현"></a></a><br>
-                            조민수 : <a href="https://www.facebook.com/profile.php?id=100015302599102" target="_blank"><img
-                            src="facebook.jpg" alt="" class="img"><a href="https://github.com/toswm128" target="_blank"><img src="깃허브.jpg" class="img" alt="조민수"></a></a>
+                            src="facebook.jpg" alt="" class="img"><a href="https://github.com/milky1234"
+                            target="_blank"><img src="깃허브.jpg" class="img" alt="홍준혁"></a></a><br>
+                    임재현 : <a href="https://www.facebook.com/profile.php?id=100016279240376" target="_blank"><img
+                            src="facebook.jpg" alt="" class="img"><a href="https://github.com/limjh0513"
+                            target="_blank"><img src="깃허브.jpg" class="img" alt="임재현"></a></a><br>
+                    조민수 : <a href="https://www.facebook.com/profile.php?id=100015302599102" target="_blank"><img
+                            src="facebook.jpg" alt="" class="img"><a href="https://github.com/toswm128"
+                            target="_blank"><img src="깃허브.jpg" class="img" alt="조민수"></a></a>
 
             </tr>
         </tfoot>
     </table>
     <button onclick="change_mode()" id="change">색 모드 변경</button>
-    Organization Github:<a href="https://github.com/honglim001" target="_blank"><img src="깃허브.jpg" alt="" class="img"></a>
+    Organization Github:<a href="https://github.com/honglim001" target="_blank"><img src="깃허브.jpg" alt=""
+            class="img"></a>
 </body>
 
 
