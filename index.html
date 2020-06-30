@@ -28,6 +28,29 @@
         function clearAllTable() { //모든 테이블을 없애는 테이블 
             $('.main_todo').remove();
         }
+        flag = -1; //-1일시 다크모드,1일시 라이트모드 
+        function change_mode() {
+            flag = flag * -1;
+            if(flag == 1)
+            {
+                $('.main').css("background-color","#F0F8FF");
+                $('.sideView').css("background-color","#F0FFFF");
+                $('#headLine').css('background-color',"#FFFAF0");
+                $('body').css("background-color","#FFFAF0");
+                $('#chat').css('background-color',"#FFFAF0");
+                $('.frame').css('background-color',"#FFFAF0");
+                $('#title_memo').css('color',"black");
+            }
+            else{
+                $('.main').css("background-color","#3c3c3c");
+                $('.sideView').css("background-color","#3c3c3c");
+                $('#headLine').css("background-color","dimgray");
+                $('#chat').css("background-color","dimgray");
+                $('body').css("background-color","dimgray");
+                $('.frame').css('background-color',"dimgrey");
+                $('#title_memo').css('color',"white");
+            }
+        }
     </script>
 </head>
 
@@ -35,19 +58,19 @@
     <table class="frame">
         <thead>
             <tr>
-                <td id="headLine" colspan="5" align="center"><strong id="headLine">📝To Do List📝</strong></td>
+                <td id="headLine" colspan="5" align="center"><strong>📝To Do List📝</strong></td>
             </tr>
         </thead>
 
         <tbody>
             <p><a href="http://www.dgsw.hs.kr/index.do" target="_blank" title="대구소프트웨어마이스터고등학교 홈페이지로 이동합니다."><img
-                        src="dgswhs.jpg" alt="대구소프트웨어마이스터고등학교 마크"></a></li>
+                        src="dgswhs.png" alt="대구소프트웨어마이스터고등학교 마크"></a></li>
             </p>
             <tr>
                 <td class="main">
                 </td>
 
-                <td class="sideView" ><strong style="color: ivory;">MeMo</strong><br>
+                <td class="sideView"><strong id="title_memo">MeMo</strong><br>
                     <input type="text" id="head" placeholder="제목을 입력하세요"><br>
                     <textarea name="" id="memo" cols="40" rows="40" class="noresize"
                         placeholder="내용을 입력하세요"></textarea><br>
@@ -69,6 +92,7 @@
             </tr>
         </tfoot>
     </table>
+    <button onclick="change_mode()" id="change">색 모드 변경</button>
     Organization Github:<a href="https://github.com/honglim001" target="_blank"><img src="깃허브.jpg" alt="" class="img"></a>
 </body>
 
