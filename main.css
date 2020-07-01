@@ -1,105 +1,118 @@
-
-#headLine{
-  font-size: 50px;
+#headLine {
+    font-size: 50px;
 }
+
 body {
-  background-color: dimgray;
-  margin:0;
+    background-color: dimgray;
+    margin: 0;
 }
 
 #headLine {
-  background-color: dimgray;
+    background-color: dimgray;
 }
 
 .frame {
-  background-color: #3c3c3c;
-  width: 100%;
-  border-collapse: collapse;
+    background-color: #3c3c3c;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .main {
-  background-color: #3c3c3c;
-  width: 80%;
-  height: 500px;
+    background-color: #3c3c3c;
+    width: 80%;
+    height: 500px;
 }
 
 .sideView {
-  background-color: #3c3c3c;
-  text-align: center;
-  width: 20%;
-  height: 500px;
+    background-color: #3c3c3c;
+    text-align: center;
+    width: 20%;
+    height: 500px;
 }
 
 tbody {
-  background-color: white;
+    background-color: white;
 }
 
 #chat {
-  background-color: dimgray;
+    background-color: dimgray;
 }
 
 .main_todo {
-  size: 100px;
-  font-family: fantasy;
-  width : 80%;
-  background:#C6B1A4;
-  border: 1px solid black;
-  color: black;
+    size: 100px;
+    font-family: fantasy;
+    width: 80%;
+    background: #C6B1A4;
+    border: 1px solid black;
+    color: black;
 }
 
 .noresize {
-  resize: none;
+    resize: none;
 }
 
 #todo {
-  width: 1000px;
+    width: 1000px;
 }
 
 .img {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
-#title_memo{
-  color: white;
+
+#title_memo {
+    color: white;
 }
-input[type=text], select {
-width: 100%;
-padding: 12px;
-padding-right: 70px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid dimgray;
-border-radius: 4px;
-box-sizing: border-box;
-background: dimgray;
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px;
+    padding-right: 70px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid dimgray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: dimgray;
 }
-textarea{
-width: 100%;
-padding: 12px;
-padding-right: 70px;
-display: inline-block;
-border: 1px solid dimgray;
-border-radius: 4px;
-box-sizing: border-box;
-background: dimgray;
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    padding-right: 70px;
+    display: inline-block;
+    border: 1px solid dimgray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: dimgray;
 }
-button{
-border: 0;
-outline: 0;
-background: gray;
-border: solid 2px black;
-border-radius: 4px;
-padding:3px;
+
+button {
+    border: 0;
+    outline: 0;
+    background: gray;
+    border: solid 2px black;
+    border-radius: 4px;
+    padding: 3px;
 }
-.del_button{
-  float: right;
-  background: #D2CDC5;
+
+.del_button {
+    float: right;
+    background: #D2CDC5;
 }
-#change{
-  float: right;
-  width: 100px;
-  height: 50px;
+
+#change {
+    float: right;
+    width: 100px;
+    height: 50px;
 }
+
 .table_color {
-  background: #C6B1A4;
+    background: #C6B1A4;
+}
+
+#help {
+    width: 30px;
+    height: 30px;
 }
