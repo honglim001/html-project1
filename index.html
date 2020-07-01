@@ -7,6 +7,41 @@
     <link rel="stylesheet" href="./main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script>
+    flag = -1; //-1일시 다크모드,1일시 라이트모드
+    function change_mode() {
+        flag = flag * -1;
+        if (flag == 1) { //화이트 모드
+            $('.main').css("background-color", "#F0F8FF");
+            $('.sideView').css("background-color", "#F0FFFF");
+            $('#headLine').css('background-color', "#ffc861");
+            $('body').css("background-color", "#ffc861");
+            $('#chat').css('background-color', "#ffc861");
+            $('.frame').css('background-color', "#ffc861");
+            $('#title_memo').css('color', "black");
+            $('#head').css('background-color',"fff28c");
+            $('#memo').css('background-color',"#fff28c");
+            $('.button_color').css('background-color',"#fff28c");
+            $('#change').css('background-color',"#F0F8FF");
+
+
+
+        } else { //다크모드
+            $('.main').css("background-color", "#3c3c3c");
+            $('.sideView').css("background-color", "#3c3c3c");
+            $('#headLine').css("background-color", "dimgray");
+            $('#chat').css("background-color", "dimgray");
+            $('body').css("background-color", "dimgray");
+            $('.frame').css('background-color', "dimgrey");
+            $('#title_memo').css('color', "white");
+            $('#head').css('background-color',"dimgrey");
+            $('#memo').css('background-color',"dimgrey");
+            $('.button_color').css('background-color',"dimgrey");
+            $('#change').css('background-color',"dimgrey");
+
+
+
+        }
+    }
         function addTable() { //테이블을 만드는 함수
             var cnt = 1;
             var head = document.getElementById('head').value;
@@ -47,46 +82,6 @@
         function clearAllTable() { //모든 테이블을 없애는 테이블
             $('.main_todo').remove();
             //$('br').remove();
-        }
-        flag = -1; //-1일시 다크모드,1일시 라이트모드
-        function change_mode() {
-            flag = flag * -1;
-            if (flag == 1) { //화이트 모드
-                $('.main').css("background-color", "#F0F8FF");
-                $('.sideView').css("background-color", "#F0FFFF");
-                $('#headLine').css('background-color', "#ffc861");
-                $('body').css("background-color", "#ffc861");
-                $('#chat').css('background-color', "#ffc861");
-                $('.frame').css('background-color', "#ffc861");
-                $('#title_memo').css('color', "black");
-                $('#head').css('background-color',"fff28c");
-                $('#memo').css('background-color',"#fff28c");
-                $('.button_color').css('background-color',"#fff28c");
-                $('#change').css('background-color',"#F0F8FF");
-                $('.del_button').css('background-color',"white");
-                $('.table_color').css("background-color","white");
-                $('.main_todo').css('background-color',"white");
-                $('.main_todo').css('color',"black");
-
-
-            } else { //다크모드
-                $('.main').css("background-color", "#3c3c3c");
-                $('.sideView').css("background-color", "#3c3c3c");
-                $('#headLine').css("background-color", "dimgray");
-                $('#chat').css("background-color", "dimgray");
-                $('body').css("background-color", "dimgray");
-                $('.frame').css('background-color', "dimgrey");
-                $('#title_memo').css('color', "white");
-                $('#head').css('background-color',"dimgrey");
-                $('#memo').css('background-color',"dimgrey");
-                $('.button_color').css('background-color',"dimgrey");
-                $('#change').css('background-color',"dimgrey");
-                $('.del_button').css('background-color',"dimgrey");
-                $('.table_color').css("background-color","dimgray");
-                $('.main_todo').css('background-color',"dimgray");
-                $('.main_todo').css('color',"white");
-
-            }
         }
     </script>
 </head>
