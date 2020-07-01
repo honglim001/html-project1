@@ -42,8 +42,9 @@ tbody {
   size: 100px;
   font-family: fantasy;
   width : 80%;
-  background:white;
+  background:#C6B1A4;
   border: 1px solid black;
+  color: black;
 }
 
 .noresize {
@@ -92,9 +93,13 @@ padding:3px;
 }
 .del_button{
   float: right;
+  background: #D2CDC5;
 }
 #change{
   float: right;
   width: 100px;
   height: 50px;
+}
+.table_color {
+  background: #C6B1A4;
 }
