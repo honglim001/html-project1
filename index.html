@@ -20,15 +20,26 @@
                 alert('내용을 입력해 주세요');
                 return;
             } else {
-                tableData += '<table class="main_todo" class="main_todo">';
-                tableData += '<tr>';
-                tableData += '<td class ="table_color">';
-                tableData += '<strong>' + head + '<br>' + '</strong>' + memo;
-                tableData += '<td class = "table_color">';
-                tableData += '<button onclick="clearTable()" class ="del_button">X</button>';
-                tableData += '<tr>';
-                tableData += '</table>';
-                $('.main').append(tableData);
+                let table = $('<table class="main_todo" class="main_todo"></table>');
+                let tr = $('<tr></tr>');
+
+                let table_head = $('<strong style="display:inline-block;"></strong>');
+                table_head.text(head);
+
+                let table_memo = $('<span></span>');
+                table_memo.text(memo);
+
+                let content = $('<td class="table_color"></td>').append(table_head, $('<br/>'), table_memo);
+
+                let td = $('<td class="table_color">');
+                let btn = $('<button onclick="clearTable()" class ="del_button">X</button>');
+
+                td.append(btn);
+                tr.append(content, td);
+
+                table.append(tr);
+                
+                $('.main').append(table);
             }
 
         }
@@ -61,7 +72,12 @@
                 $('#memo').css('background-color', "#fff28c");
                 $('.button_color').css('background-color', "#fff28c");
                 $('#change').css('background-color', "#F0F8FF");
-                
+                $('.del_button').css('background-color', "white");
+                $('.table_color').css("background-color", "white");
+                $('.main_todo').css('background-color', "white");
+                $('.main_todo').css('color', "black");
+
+
             } else { //다크모드
                 $('.main').css("background-color", "#3c3c3c");
                 $('.sideView').css("background-color", "#3c3c3c");
@@ -74,6 +90,11 @@
                 $('#memo').css('background-color', "dimgrey");
                 $('.button_color').css('background-color', "dimgrey");
                 $('#change').css('background-color', "#ebebeb");
+                $('.del_button').css('background-color', "dimgrey");
+                $('.table_color').css("background-color", "dimgray");
+                $('.main_todo').css('background-color', "dimgray");
+                $('.main_todo').css('color', "white");
+
             }
         }
     </script>
@@ -115,7 +136,7 @@
                     조민수 : <a href="https://www.facebook.com/profile.php?id=100015302599102" target="_blank"><img
                             src="facebook.png" alt="" class="img"><a href="https://github.com/toswm128"
                             target="_blank"><img src="깃허브.jpg" class="img" alt="조민수"></a></a><br>
-                    도움말 : <a href="help.html" target="_blank"><img src="help.png" id="help"></a>
+                    도움말 : <a href="help.html"><img src="help.png" id="help"></a>
 
             </tr>
         </tfoot>
