@@ -11,6 +11,26 @@ body {
     background-color: dimgray;
 }
 
+A:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+A:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+A:active {
+    text-decoration: none;
+    color: #000000;
+}
+
+A:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
 .frame {
     background-color: #3c3c3c;
     width: 100%;
